@@ -1,0 +1,42 @@
+#nest-one {
+    font-family: "Sofia", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
+  
+  .quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 400px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+  }
+  
+  p {
+    line-height: 1;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .decrypt {
+    display: flex;
+    column-gap: 20px;
+    max-width: 400px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  
+  .decrypt-item {
+    padding: 5px 10px;
+    background-color: #ededed;
+    border-radius: 5px;
+  }

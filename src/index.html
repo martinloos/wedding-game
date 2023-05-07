@@ -1,22 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<!doctype html>
+<html class="no-js" lang="de">
 
-    <title>Parcel Boilerplate</title>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Example using CSS -->
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <!-- Example using SASS -->
-    <!-- <link rel="stylesheet" href="./css/style.sass"> -->
-    <!-- Example using SCSS -->
-    <link rel="stylesheet" href="./css/style.scss" />
-  </head>
-  <body>
-    <h1 class="fromsass">Parcel Boilerplate</h1>
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
 
-    <script src="./index.js"></script>
-  </body>
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/modifiers.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/nest-one.css">
+  <link rel="stylesheet" href="./css/catchme.scss">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+  <!-- removing site caching. reasoning: GH pages caches site, which makes clearing cache everytime after deploying necessary. we dont want that. -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta name="theme-color" content="#fafafa">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+          <div class="tile">
+            <div class="home-top-container">
+              <div class="home-icons">
+                <img src="./img/pswrd-icon.png">            
+              </div>
+              <div class="home-pswrd-headline">
+                <span class="home-pswrd-headline-top">Löse alle Challenges und verwende die erhaltenen Passwörter.</span>
+                <span class="home-pswrd-headline-bot">Reihe die erhaltenen Codes der Reihe nach aneinander.</span>
+              </div>
+            </div>
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="inp-label">Passwort</label>
+                <input type="password" class="form-control" >
+                <div class="input-group-addon"><i class="fa fa-eye"></i></div>
+              </div>
+            </div><!-- group -->
+            <div class="text-center button-container"><label class="btn btn-primary">Entsperren</label>
+            </div>
+          </form>
+            <div class="success" id="success">
+              <div class="circle-loader">
+              <div class="checkmark draw"></div>
+            </div><!-- circle -->
+            <h2>You did it!</h2>
+            <h2>Code: 050505</h2>
+            </div><!-- success-->
+          </div><!-- tile-->
+        </div> <!--col-6-->
+      </div><!-- row -->
+      </div><!-- container -->
+  </div>
+  <div id="nest-one" class="-hidden">
+    <h1>Challenge # 1</h1>
+    <div class="quote-container">
+      <div class="quote-wrapper">
+        <p>Amidst the stars, some seem to shine particularly bright.</p>
+        <p>Said "I do" without any hesitation or delusion.</p>
+        <p>Cake in hand, ring on the finger, ready to take the plunge,</p>
+        <p>In her eyes he saw love's range.</p>
+        <p>It's official, their hearts will forever interlunge.</p>
+      </div>
+    </div>
+    <div class="decrypt">
+      <div class="decrypt-item">
+        <span>35</span>
+      </div>
+      <div class="decrypt-item">
+        <span>2B</span>
+      </div>
+      <div class="decrypt-item">
+        <span>36</span>
+      </div>
+      <div class="decrypt-item">
+        <span>3D</span>
+      </div>
+      <div class="decrypt-item">
+        <span>3F</span>
+      </div>
+    </div>
+  </div>
+  <div id="nest-two" class="-hidden">
+    <div class="wrapper">
+      <div class="module-catchme">
+        <div class="catchme__eyes">
+          <div class="eye eye-left">
+            <div class="eye-inner"></div>
+          </div>
+          <div class="eye eye-right">
+            <div class="eye-inner"></div>
+          </div>
+        </div>
+        <div class="catchme__nose">
+          <div class="nose__button -text-1" data-clicked="0">
+            <span>Challenge # 2</span>
+            <span>Catch Me</span>
+            <span>Again</span>
+            <span>Try Harder</span>
+            <span>One<br>Last<br>Time</span>
+          </div>
+        </div>
+        <div class="catchme__mouth -m1"></div>
+      </div>
+    </div>
+  </div>
+  <div id="nest-three" class="-hidden">page content 3</div>
+  <div id="nest-four" class="-hidden">page content 4</div>
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script type="module" src="./js/index.js"></script>
+</body>
+
 </html>
+
