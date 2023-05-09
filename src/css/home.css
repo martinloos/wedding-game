@@ -131,7 +131,7 @@
 	background: linear-gradient(135deg, #3F61F6 0%,#22d2f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F61F6', endColorstr='#22d2f8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	}
-	.success
+	#home .success
 	{
 	  position:absolute;
 	  top:0;
@@ -151,7 +151,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42e695', endColorstr='#3bb2b8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	overflow: hidden;
 	}
-	.success h2
+	#home .success h2
 	{
 		text-align: center;
 		color: #fff;

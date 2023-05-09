@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/nest-one.css">
   <link rel="stylesheet" href="./css/catchme.scss">
+  <link rel="stylesheet" href="./css/hangman.scss">
+  <link rel="stylesheet" href="./css/memory.scss">
+  <link rel="stylesheet" href="./css/sam.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
   <!-- removing site caching. reasoning: GH pages caches site, which makes clearing cache everytime after deploying necessary. we dont want that. -->
@@ -36,7 +39,7 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <div id="home">
+  <div id="home" class="-hidden">
     <div class="container">
       <div class="row">
         <div class="col-sm-offset-3 col-sm-6">
@@ -126,8 +129,157 @@
       </div>
     </div>
   </div>
-  <div id="nest-three" class="-hidden">page content 3</div>
-  <div id="nest-four" class="-hidden">page content 4</div>
+  <div id="nest-three" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <img src="./img/img1.png" alt="">
+  </div>
+  <div id="nest-four" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <img src="./img/img2.png" alt="">
+  </div>
+    <div id="nest-five" class="-hidden container-wrap">
+      <h1># Niete</h1>
+      <iframe src="https://giphy.com/embed/1x3LVhXaUdISA" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+  <div id="nest-six" class="-hidden">
+    <div class="nest-six-wrapper -hidden">
+      <h1># Challenge 3</h1>
+      <div class="ctn">
+        <h1>Domi's Hangman</h1>
+        <p class="reveal-word"></p>
+        <p class="display-word" id="word"></p>
+        <p class="attempts-remaining">Versuche übrig: <span id="attempts-remaining"></span></p>
+        <div class="hangman-ctn">
+            <img id="hangman-img" src= "https://raw.githubusercontent.com/ruthinunes/hangman/main/images/0.png" alt="">
+        </div>
+        <div class="alphabet-ctn"></div>
+      </div>
+    </div>
+  </div>
+  <div id="nest-seven" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <iframe src="https://giphy.com/embed/SSEn4isK0v5hCscQ7Q" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
+  <div id="nest-eigth" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <iframe src="https://giphy.com/embed/WYPqBEVPRFQSQ" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
+  <div id="nest-nine" class="-hidden">
+    <h1># Challenge 4</h1>
+    <div class="container">
+      <h1>Domi's persönliches Memory</h1>
+      <ul class="board"></ul>  
+    </div>    
+  </div>
+  <div id="nest-ten" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <img src="https://i.ytimg.com/vi/fTJ5o_uW3eM/maxresdefault.jpg" alt="">
+  </div>
+  <div id="nest-11" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <iframe src="https://giphy.com/embed/12BYUePgtn7sis" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
+  <div id="nest-12" class="-hidden">
+    <!-- TODO insert challenge -->
+    <h1># Challenge 5</h1>
+  </div>
+  <div id="nest-13" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <iframe src="https://giphy.com/embed/V5Jc8pRfCFkQw" width="400" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
+  <div id="nest-14" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <iframe src="https://giphy.com/embed/A9KfKenpqNDfa" width="480" height="230" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
+  <main id="nest-15" class="-hidden">
+    <h1># Challenge 6</h1>
+    <dialog>
+      <div class="dialog">
+        <div class="wrong">
+          <h2>Ist das dein Ernst?</h2>
+          <img src="./img/domi-sus.jpg" />
+          <svg class="closewrong" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+          <p>
+            Der angegebene Code ist nicht korrekt, aber du kannst es noch
+            einmal versuchen, wenn du willst 😉
+          </p>
+        </div>
+        <div class="success">
+          <div class="images">
+            <img class="left" src="./img/domi-indica.jpg" />
+            <img class="right" src="./img/domi-indica.jpg" />
+          </div>
+          <div class="message">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+            </svg>
+            <h2>WICHTIGE NACHRICHT!</h2>
+            <p>
+              Der eingegebene Code ist für diese Challenge korrekt! Wir haben jedoch Ihre Eingabe im Inputfeld gelöscht. 
+              Falls Sie sich den Code nicht notiert haben, starten Sie wieder von vorne. 😃
+            </p>
+          </div>
+          <svg class="closesuccess" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </div>
+      </div>
+    </dialog>
+    <div class="title">
+      <h1>
+        Um fortzufahren, suche nach etwas in den Bildern, das in Zahlen
+        umgewandelt werden kann (es gibt nur eine Art der Nummerierung)
+      </h1>
+    </div>
+    <section>
+      <img width="100%" src="./img/image-1.jpg" />
+    </section>
+    <section>
+      <img width="100%" src="./img/image-2.jpg" />
+    </section>
+    <section>
+      <img width="100%" src="./img/image-3.jpg" />
+    </section>
+    <section>
+      <img width="100%" src="./img/image-4.jpg" />
+    </section>
+    <section>
+      <img width="100%" src="./img/image-5.jpg" />
+    </section>
+    <section>
+      <img width="100%" src="./img/image-6.jpg" />
+    </section>
+    <section>
+      <img width="100%" src="./img/image-7.jpg" />
+    </section>
+    <section>
+      <img width="100%" src="./img/image-8.jpg" />
+    </section>
+    <div class="solution">
+      <p>
+        Geben Sie hier den vollständigen Code aller auf den Bildern gefundenen
+        Zahlen in der Reihenfolge ein und drücken Sie dann die Kopiertaste
+      </p>
+      <input type="text" />
+      <button>
+        Kopieren
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path d="M448 384H256c-35.3 0-64-28.7-64-64V64c0-35.3 28.7-64 64-64H396.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V320c0 35.3-28.7 64-64 64zM64 128h96v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H256c8.8 0 16-7.2 16-16V416h48v32c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192c0-35.3 28.7-64 64-64z" />
+        </svg>
+      </button>
+    </div>
+  </main>
+  <div id="nest-16" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <img src="./img/img3.png" alt="">
+  </div>
+  <div id="nest-17" class="-hidden container-wrap">
+    <h1># Niete</h1>
+    <img src="./img/img4.png" alt="">
+  </div>
+
 
 
 

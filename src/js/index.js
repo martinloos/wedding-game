@@ -1,6 +1,10 @@
 import { birdFindsDestination } from './bird.js';
 import { init as initHome } from './home.js';
 import { playCatchMe } from './catchme.js';
+import { playHangman } from './hangman.js';
+import { playMemory } from './memory.js';
+import { sam } from './sam.js';
+
 
 function getContainer(id) 
 {
@@ -11,7 +15,14 @@ function getContainer(id)
 const searchParam = window.location.search
 console.log(searchParam)
 
-birdFindsDestination(searchParam)
+if (searchParam === '')
+{
+  document.getElementById('home').classList.remove('-hidden')
+}
+else
+{
+  birdFindsDestination(searchParam)
+}
 
 window.onload = function() {
   if (!getContainer('home').classList.contains('-hidden')) 
@@ -27,5 +38,20 @@ window.onload = function() {
   {
     console.log('discovered nest two')
     playCatchMe()
+  }
+  if (!getContainer('nest-six').classList.contains('-hidden')) 
+  {
+    console.log('discovered nest six')
+    playHangman()
+  }
+  if (!getContainer('nest-nine').classList.contains('-hidden')) 
+  {
+    console.log('discovered nest nine')
+    playMemory()
+  }
+  if (!getContainer('nest-15').classList.contains('-hidden')) 
+  {
+    console.log('discovered nest 15')
+    sam()
   }
 }
