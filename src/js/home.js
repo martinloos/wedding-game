@@ -3,7 +3,6 @@ let pswrd = ''
 
 export function init ()
 {
-    console.log('init home')
     /*--------------------input focus----------------*/
 	$( "input" ).focus(function() {
         $( this ).parent().find(".inp-label").addClass("active");

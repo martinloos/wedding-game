@@ -30,6 +30,19 @@ window.onload = function() {
   if (!getContainer('nest-one').classList.contains('-hidden')) 
   {
     console.log('discovered nest one')
+    $('#tooltip-btn').on('mousedown', () => {
+      if ($('#tooltipT').css('display') === 'none')
+      {
+        $('#tooltipT').css('display', 'block')
+      }
+      else 
+      {
+        $('#tooltipT').css('display', 'none')
+      }
+    })
+    $('#close-tooltip').on('mousedown', () => {
+      $('#tooltipT').css('display', 'none')
+    })
   }
   if (!getContainer('nest-two').classList.contains('-hidden')) 
   {
