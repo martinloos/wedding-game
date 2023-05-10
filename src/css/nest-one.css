@@ -4,7 +4,7 @@
 
 h1 {
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
   }
   
@@ -59,7 +59,7 @@ h1 {
 		display:block;
 		position:relative;
 		text-align: center;
-		margin-top: 50px;
+		margin-top: 30px;
 	  }
 	  .tipClick > a:focus + .tooltipT{
 		/*TOOLTIP VISIBLE ON CLICKING THE ICON*/
