@@ -12,6 +12,10 @@
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
+#nest-15 img {
+    max-width: 800px;
+}
   
 #nest-15 section {
     height: 60dvh;

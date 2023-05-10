@@ -1,0 +1,107 @@
+#nest-12 .main {
+    background-color: #f5f5f5;
+    padding: 10%;
+    max-width: 600px;
+}
+#nest-12 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+}
+#nest-12 .riddle-container {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 30px 20px;
+    width: 70%;
+}
+#nest-12 .queestion-container {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#nest-12 .form-container {
+    text-align: center;
+
+}
+
+#nest-12 .tries-container {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#nest-12 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#nest-12 .current-stand{
+    text-align: center;
+    font-size: 1.2rem;
+}
+#nest-12 .current-stand.wrong{
+    color: red;
+}
+#nest-12 .current-stand.correct{
+    color: green;
+    
+    & h3 {
+        font-size: 50px;
+    }
+}
+#nest-12 .current-stand .hint-btn {
+    display: block;
+    background-color: #4bc9ec;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+#nest-12 .current-stand .hint-btn.hidden {
+    display: none;
+}
+
+#nest-12 .submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nest-12 .queestion-container h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 52px;
+}
+
+#nest-12 h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#myform {
+    padding: 0 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

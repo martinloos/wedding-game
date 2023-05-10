@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="./css/hangman.scss">
   <link rel="stylesheet" href="./css/memory.scss">
   <link rel="stylesheet" href="./css/sam.css">
+  <link rel="stylesheet" href="./css/riddle.scss">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
   <!-- removing site caching. reasoning: GH pages caches site, which makes clearing cache everytime after deploying necessary. we dont want that. -->
@@ -179,10 +180,42 @@
     <h1># Niete</h1>
     <iframe src="https://giphy.com/embed/12BYUePgtn7sis" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
   </div>
-  <div id="nest-12" class="-hidden">
-    <!-- TODO insert challenge -->
+  <section id="nest-12" class="main -hidden">
     <h1># Challenge 5</h1>
-  </div>
+    <div class="riddle-container">
+        <h2>
+            I'm the conductor of the symphony band,<br>
+            Leading them with a steady hand.<br>
+            I'm the composer of each melody,<br>
+            Crafting music with perfect harmony.<br>
+            <br>
+            I'm the leader of the chorus line,<br>
+            Making sure their voices shine.<br>
+            I'm the arranger of the score,<br>
+            Ensuring every note we adore.<br>
+        </h2>
+    </div>
+    <div class="queestion-container">
+        <h1>Who am I ? </h1>
+    </div>
+    <div class="tries-container">
+        <h2>number of tries: <span id="tries">0</span></h2>
+    </div>
+    <div class="current-stand">
+        <h3 id="stand"></h3>
+        <button id="hint" class="hint-btn hidden">Hint</button>
+    </div>
+    <div class="form-container">
+        <form id="myform">
+            <div>
+                <input type="text" id="answer" name="answer" />
+            </div>
+            <div>
+                <button class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
   <div id="nest-13" class="-hidden container-wrap">
     <h1># Niete</h1>
     <iframe src="https://giphy.com/embed/V5Jc8pRfCFkQw" width="400" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
@@ -218,7 +251,7 @@
             <h2>WICHTIGE NACHRICHT!</h2>
             <p>
               Der eingegebene Code ist für diese Challenge korrekt! Wir haben jedoch Ihre Eingabe im Inputfeld gelöscht. 
-              Falls Sie sich den Code nicht notiert haben, starten Sie wieder von vorne. 😃
+              Falls Sie sich den Code nicht notiert haben, starten Sie wieder von vorne. 😃 Dieser Code ist der letzte Baustein für das Gesamtpasswort.
             </p>
           </div>
           <svg class="closesuccess" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -277,7 +310,7 @@
   </div>
   <div id="nest-17" class="-hidden container-wrap">
     <h1># Niete</h1>
-    <img src="./img/img4.png" alt="">
+    <img src="./img/domi-the-referee.png" alt="">
   </div>
 
 

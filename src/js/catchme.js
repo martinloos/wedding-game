@@ -53,7 +53,7 @@ export function playCatchMe()
                     break;
                 case 4:        
                     clearNose();
-                    $('.nose__button').html('<p>' + atob('dGVzdDEyMw==') + '</p>');
+                    $('.nose__button').html('<p>' + atob('Q29kZTogMjA=') + '</p>');
                     $('.module-catchme').removeClass('-state-1').removeAttr('style');
                     window.clearInterval(stageInterval);
                     break;

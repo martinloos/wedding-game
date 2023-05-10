@@ -4,6 +4,7 @@ import { playCatchMe } from './catchme.js';
 import { playHangman } from './hangman.js';
 import { playMemory } from './memory.js';
 import { sam } from './sam.js';
+import { doRiddle } from './riddle.js'
 
 
 function getContainer(id) 
@@ -18,6 +19,7 @@ console.log(searchParam)
 if (searchParam === '')
 {
   document.getElementById('home').classList.remove('-hidden')
+  initHome()
 }
 else
 {
@@ -25,11 +27,6 @@ else
 }
 
 window.onload = function() {
-  if (!getContainer('home').classList.contains('-hidden')) 
-  {
-    console.log('discovered home')
-    initHome()
-  }
   if (!getContainer('nest-one').classList.contains('-hidden')) 
   {
     console.log('discovered nest one')
@@ -48,6 +45,11 @@ window.onload = function() {
   {
     console.log('discovered nest nine')
     playMemory()
+  }
+  if (!getContainer('nest-12').classList.contains('-hidden')) 
+  {
+    console.log('discovered nest 12')
+    doRiddle()
   }
   if (!getContainer('nest-15').classList.contains('-hidden')) 
   {
