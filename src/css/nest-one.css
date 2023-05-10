@@ -5,7 +5,7 @@
 h1 {
     text-align: center;
     margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
   }
   
   .quote-wrapper {
@@ -40,3 +40,97 @@ h1 {
     background-color: #ededed;
     border-radius: 5px;
   }
+
+  #nest-one .quote-wrapper p::first-letter {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #nest-one .container-tooltip {
+		transition: 0.3s;
+		position:relative
+	  }
+	  .tipClick>a{
+		font-size: 20px;
+		line-height: 21px
+	  }
+	  .tipClick{
+	   
+		display:block;
+		position:relative;
+		text-align: center;
+		margin-top: 50px;
+	  }
+	  .tipClick > a:focus + .tooltipT{
+		/*TOOLTIP VISIBLE ON CLICKING THE ICON*/
+		  display:block;
+	  }
+	  .tooltipT{
+		  display:none;/*=====INITIAL HIDDEN STATE=====*/
+		  position: absolute;
+		  background: #fff;
+		  -moz-box-shadow: 0 0 6px 1px #666666;
+		  -webkit-box-shadow: 0 0 6px 1px #666666;
+		  box-shadow: 0 0 6px 1px #666666;
+		  border:solid #FFFFFF;
+		  color: #636363;
+		  padding:10px 25px 10px 10px;
+		  font-family:Arial;
+		  font-size: 15px;
+		  text-align: center;
+		  text-align:left;
+		  bottom:26px;
+		  left: 50px;
+			right:-20px;
+		  z-index: 10;
+			max-width:200px
+	  }
+	  .tooltipT p{
+		   margin:10px;
+		}
+		/*=====CLOSE BUTTON=====*/
+	  .tooltipT span{
+		  position: absolute;
+		  top:10px;
+		  right: 10px;
+		  font-size: 20px;
+		  line-height: 1;
+	  }
+	  .tooltipT span a{
+		  text-decoration: none;
+		  color: #00529B;
+	  }
+	  .tooltipT span:focus .tooltipT{
+		  display: none;/*CLOSE TOOLTIP ON CLICK*/
+	  }
+	  /*======ARROW=====*/
+	  .tooltipT>.arrow, .tooltipT>.arrow:after {
+		  position: absolute;
+		  display: block;
+		  width: 0;
+		  height: 0;
+		  border-color: transparent;
+		  border-style: solid
+	  }
+	  .tipClick>.tooltipT>.arrow {
+		  border-width: 11px;
+		  bottom: -14px;
+		  right: 0px;
+		  margin-left: -11px;
+		  border-top-color: #999;
+		  border-top-color: rgba(0, 0, 0, .25);
+		  border-bottom-width: 0;
+	  }
+	  .tipClick>.tooltipT>.arrow:after {
+		  content: "";
+		  border-width: 10px;
+		  bottom: 1px;
+		  margin-left: -10px;
+		  content: " ";
+		  border-top-color: #fff;
+		  border-bottom-width: 0
+	  }
+
+    #nest-one .tooltipT p {
+      font-family: "Sofia", sans-serif;
+    }

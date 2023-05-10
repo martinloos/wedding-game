@@ -52,7 +52,7 @@ function initTrigger() {
         break;
       case 4:        
         clearTrigger();
-        $('.trigger__button').html('<p>' + atob('dGVzdDEyMw==') + '</p>');
+        $('.trigger__button').html('<p>' + atob('Q29kZTogMjA=') + '</p>');
         $('.module-catchme').removeClass('-state-1').removeAttr('style');
         window.clearInterval(stageInterval);
         
